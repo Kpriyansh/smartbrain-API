@@ -38,4 +38,4 @@ app.post('/signin', (req, res) => {signin.handleSignin(req,res,bcrypt,db)});
 
 
 
-app.listen(PORT);
+app.listen(PORT,()=>console.log(`listening on port ${PORT}`));
