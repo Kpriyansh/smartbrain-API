@@ -10,7 +10,7 @@ const signin = require('./Controllers/signin')
 const image = require('./Controllers/image');
 
 const PORT = process.env.PORT || 3002;
-
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 const db = knex({
     client: 'pg',
     connection: {
